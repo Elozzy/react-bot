@@ -19,7 +19,7 @@ const steps =[
   },
   {
     id: '3',
-  message : 'Hi {previousValue}, nice to meet you!',
+  message : 'Hi {previousValue}, nice to meet you! Welcome to KeyStone Bank',
     trigger: '4',
   },
   {
