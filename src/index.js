@@ -92,6 +92,6 @@ const steps =[
 ]
 
 
-render(<ChatBot steps={steps} />, document.getElementById("root"));
+render(<ChatBot steps={steps} className="container mt-40 px-3 md:ml-40 md:pl-10" />, document.getElementById("root"));
 
 
