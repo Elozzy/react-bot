@@ -7,12 +7,12 @@ import "./index.css";
 
 //theme
 const theme = {
-  background: "#091E42DE",
+  background: "#fff",
   fontFamily: "Helvetica Neue",
-  headerBgColor: "#D51709",
+  headerBgColor: "purple",
   headerFontColor: "#FFF",
   headerFontSize: "20px",
-  botBubbleColor: "#00",
+  botBubbleColor: "purple",
   botFontColor: "#fff",
   userBubbleColor: "#fff",
   userFontColor: "#4a4a4a",
@@ -164,7 +164,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <ChatBot
           steps={steps}
-          headerTitle="Customer Service"
+          headerTitle="Tani"
           className="container mt-40 px-3 md:ml-40 md:pl-10 "
         />
       </ThemeProvider>
