@@ -32,7 +32,7 @@ const steps = [
   {
     id: "3",
     message:
-      "can you provide your full the following details: name, phone number and date of birth",
+      "can you provide y the following details: name, phone number and date of birth",
     trigger: "4",
   },
   {
@@ -165,6 +165,7 @@ function App() {
         <ChatBot
           steps={steps}
           headerTitle="Tani"
+          speechSynthesis={{ enable: true, lang: 'en' }}
           className="container mt-40 px-3 md:ml-40 md:pl-10 "
         />
       </ThemeProvider>
