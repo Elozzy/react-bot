@@ -21,7 +21,7 @@ const theme = {
 const steps = [
   {
     id: "1",
-    message: "Hello, is there anything I can help you with today?",
+    message: "Hello, Welcome to Tanny Bank. Is there anything I can help you with today?",
     trigger: "2",
   },
   {
@@ -32,12 +32,12 @@ const steps = [
   {
     id: "3",
     message:
-      "can you provide y the following details: name, phone number and date of birth",
+      "can you provide the following details: name, phone number and date of birth",
     trigger: "4",
   },
   {
     id: "4",
-    message: "what is your date of birth? e.g 09/10/1994 dd/mm/yy ",
+    message: "what is your date of birth (dd/mm/yy)?   ",
     trigger: "5",
   },
   {
@@ -85,7 +85,7 @@ const steps = [
       { value: "9", label: "Link New Account", trigger: "1" },
       { value: "10", label: "Reset Pin", trigger: "1" },
       { value: "11", label: "Loan Request", trigger: "1" },
-      { value: "12", label: "FAQ", trigger: "1" },
+      { value: "12", label: "FAQ", trigger: "20" },
     ],
   },
   {
@@ -132,6 +132,12 @@ const steps = [
     trigger: 'continue-chat',
   },
   {
+    id: "20",
+    message:
+      "You can read up our FAQ here https://bit.ly/3BiH88t",
+    trigger: 'continue-chat',
+  },
+  {
     id:'continue-chat', 
     message:'Do you want to perform another transaction?', 
     trigger:'end-chat',
@@ -164,7 +170,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <ChatBot
           steps={steps}
-          headerTitle="Tani"
+          headerTitle="Tanny"
           speechSynthesis={{ enable: true, lang: 'en' }}
           className="container mt-40 px-3 md:ml-40 md:pl-10 "
         />
